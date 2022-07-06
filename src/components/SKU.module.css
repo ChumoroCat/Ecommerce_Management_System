@@ -1,0 +1,60 @@
+.container {
+  background-color: #f8f8e7;
+  padding: 1vw;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  border: 1px solid orange;
+}
+
+.container-header {
+  background-color: grey;
+  color: white;
+  padding: 0.3vw 1vw;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  border: 1px solid black;
+}
+
+.card {
+  width: 8vw;
+}
+
+.flex_1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.flex_2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: teal;
+  color: white;
+  font-size: 0.9vw;
+
+  border-radius: 5px;
+  padding: 0.5vw 1vw;
+  border: 1px solid teal;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+.subnav {
+  background-color: #118ab2;
+  font-size: 1.3vw;
+  padding: 1vw;
+  padding-left: 6.8vw;
+  color: white;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  background-color: #FFD166;
+  color: black;
+
+  margin-left: auto;
+  margin-right: 1vw;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border: 1px solid #FFD166;
+  cursor: pointer;
+
+
+}

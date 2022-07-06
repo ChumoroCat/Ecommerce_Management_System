@@ -1,0 +1,23 @@
+.popup {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  z-index: 10;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-inner {
+  background-color: white;
+  width: 30vw;
+  height: auto;
+
+  position: fixed;
+  margin: 0 auto;
+  padding-bottom: 1vw;
+  top: 25%;
+}

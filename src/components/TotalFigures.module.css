@@ -1,0 +1,36 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    width: 15vw;
+    height: auto;
+    font-size: 0.8vw; 
+    line-height: 0;
+    padding: 1vw;
+    margin: 2vw;
+    border-radius: 4px;
+    border: 6px solid orangered;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+.red {
+    color: #EF476F;
+    font-size: 1.5vw;
+}
+
+.green {
+    color: #06D6A0;
+    font-size: 1.5vw;
+}
+
+.blue {
+    color: #118AB2;
+    font-size: 1.5vw;
+}

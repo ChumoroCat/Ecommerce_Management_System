@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+/* Color Palette: https://coolors.co/palette/ef476f-ffd166-06d6a0-118ab2-073b4c */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", 'Open Sans', "sans-serif";
+  margin: 0;
+  background-color: #e7f8f8;
+}
+
+.centered_left {
+  padding-left: 1vw;
+  padding-right: 1vw;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 2vw;
+  flex-wrap: wrap;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.centered_middle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10vw;
+}
+
+.centered-big {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.2vw;
+  margin-top: 5vw;
+  color: teal;
+}
+
+

@@ -1,0 +1,43 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.controls {
+    font-size: 1vw;
+    border-radius: 4px;
+    margin-bottom: 0.5vw;
+    padding: 0.5vw;
+    width: 80%;
+
+    border: 3px solid grey;
+}
+
+.message {
+    font-size: 1vw;
+    border-radius: 4px;
+    margin-bottom: 0.5vw;
+    padding: 0.5vw;
+    width: 80%;
+    color: grey;
+}
+
+.labels {
+    font-size: 0.9vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.2vw;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: teal;
+    color: white;
+  
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    margin-left: 1vw;
+    border: 1px solid teal;
+    cursor: pointer;
+  }

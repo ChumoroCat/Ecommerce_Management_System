@@ -1,0 +1,38 @@
+.nav {
+  background-color: #073B4C;
+  padding: 0.7rem;
+  width: 100%;
+  max-width: 100%;
+
+  height: auto;
+    /* position: fixed; */
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+  color: greenyellow;
+  border-bottom: 3px solid greenyellow;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem;
+  font-size: 1vw;
+}
+
+.title {
+  color: bisque;
+  font-size: 2vw;
+
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
