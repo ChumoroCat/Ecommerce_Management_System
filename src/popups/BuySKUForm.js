@@ -41,6 +41,9 @@ function BuySKUForm(props) {
           placeholder="Quantity"
           className={style.controls}
           ref={qtyRef}
+          min="1"
+          max="999"
+          required
         />
 
         <div>

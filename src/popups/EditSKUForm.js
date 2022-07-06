@@ -28,7 +28,7 @@ function EditSKUForm(props) {
     await response.json();
   }
 
-  async function completeEdit(event){
+  async function completeEdit(event) {
     await editSKUHandler(event);
     await props.closeButton(false);
     await props.showSKU();
@@ -40,14 +40,19 @@ function EditSKUForm(props) {
         <label htmlFor="category" className={style.labels}>
           Category
         </label>
-        <input
-          type="text"
+        <select
           name="category"
-          placeholder="Category"
-          className={style.controls}
+          className={style["controls-select"]}
           ref={categoryRef}
           defaultValue={props.category}
-        />
+          required
+        >
+          <option value="Bags">Bags</option>
+          <option value="Belts">Belts</option>
+          <option value="Clothes">Clothes</option>
+          <option value="Shoes">Shoes</option>
+          <option value="Wallets">Wallets</option>
+        </select>
         <label htmlFor="name" className={style.labels}>
           Name
         </label>
@@ -58,6 +63,9 @@ function EditSKUForm(props) {
           className={style.controls}
           ref={nameRef}
           defaultValue={props.name}
+          minLength="3"
+          maxLength="20"
+          required
         />
         <label htmlFor="costprice" className={style.labels}>
           Cost Price
@@ -69,6 +77,9 @@ function EditSKUForm(props) {
           className={style.controls}
           ref={costRef}
           defaultValue={props.costprice}
+          min="1"
+          max="9999"
+          required
         />
         <label htmlFor="sellprice" className={style.labels}>
           Selling Price
@@ -80,6 +91,9 @@ function EditSKUForm(props) {
           className={style.controls}
           ref={sellRef}
           defaultValue={props.sellprice}
+          min="1"
+          max="9999"
+          required
         />
 
         <div>

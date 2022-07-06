@@ -33,7 +33,7 @@ function CreateSKUForm(props) {
     await response.json();
   }
 
-  async function completeSubmit(event){
+  async function completeSubmit(event) {
     await addSKUHandler(event);
     await props.closeButton(false);
     await props.showSKU();
@@ -45,13 +45,18 @@ function CreateSKUForm(props) {
         <label htmlFor="category" className={style.labels}>
           Category
         </label>
-        <input
-          type="text"
+        <select
           name="category"
-          placeholder="Category"
-          className={style.controls}
+          className={style["controls-select"]}
           ref={categoryRef}
-        />
+          required
+        >
+          <option value="Bags">Bags</option>
+          <option value="Belts">Belts</option>
+          <option value="Clothes">Clothes</option>
+          <option value="Shoes">Shoes</option>
+          <option value="Wallets">Wallets</option>
+        </select>
         <label htmlFor="name" className={style.labels}>
           Name
         </label>
@@ -61,6 +66,9 @@ function CreateSKUForm(props) {
           placeholder="Name"
           className={style.controls}
           ref={nameRef}
+          minLength="3"
+          maxLength="20"
+          required
         />
         <label htmlFor="costprice" className={style.labels}>
           Cost Price
@@ -71,6 +79,9 @@ function CreateSKUForm(props) {
           placeholder="Cost Price"
           className={style.controls}
           ref={costRef}
+          min="1"
+          max="9999"
+          required
         />
         <label htmlFor="sellprice" className={style.labels}>
           Selling Price
@@ -81,6 +92,9 @@ function CreateSKUForm(props) {
           placeholder="Selling Price"
           className={style.controls}
           ref={sellRef}
+          min="1"
+          max="9999"
+          required
         />
         <div>
           <input className={style.btn} type="submit" value="Submit" />

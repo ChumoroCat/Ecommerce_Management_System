@@ -42,7 +42,9 @@ function BuyProductForm(props) {
           placeholder="Quantity"
           className={style.controls}
           ref={qtyRef}
+          min="1"
           max={props.qty}
+          required
         />
 
         <div>
