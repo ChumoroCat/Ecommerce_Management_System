@@ -32,7 +32,7 @@ function BuyProductForm(props) {
 
   return (
     <div>
-      <form className={style.form} onSubmit={completeSell}>
+      <form id="BuyProductForm" className={style.form} onSubmit={completeSell}>
         <label htmlFor="qty" className={style.labels}>
           Quantity to Buy
         </label>
@@ -44,6 +44,7 @@ function BuyProductForm(props) {
           ref={qtyRef}
           min="1"
           max={props.qty}
+          step="1"
           required
         />
 

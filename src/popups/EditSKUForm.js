@@ -13,8 +13,8 @@ function EditSKUForm(props) {
     const results = {
       category: categoryRef.current.value,
       name: nameRef.current.value,
-      costprice: costRef.current.value.replace(/^0+|0+$/g, ""),
-      sellprice: sellRef.current.value.replace(/^0+|0+$/g, ""),
+      costprice: parseInt(costRef.current.value),
+      sellprice: parseInt(sellRef.current.value),
     };
 
     const response = await fetch(
@@ -79,6 +79,7 @@ function EditSKUForm(props) {
           defaultValue={props.costprice}
           min="1"
           max="9999"
+          step="1"
           required
         />
         <label htmlFor="sellprice" className={style.labels}>
@@ -93,6 +94,7 @@ function EditSKUForm(props) {
           defaultValue={props.sellprice}
           min="1"
           max="9999"
+          step="1"
           required
         />
 

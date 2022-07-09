@@ -14,8 +14,8 @@ function CreateSKUForm(props) {
       id: Date.now(),
       category: categoryRef.current.value,
       name: nameRef.current.value,
-      costprice: costRef.current.value.replace(/^0+|0+$/g, ""),
-      sellprice: sellRef.current.value.replace(/^0+|0+$/g, ""),
+      costprice: parseInt(costRef.current.value),
+      sellprice: parseInt(sellRef.current.value),
       qty: 0,
       expense: 0,
       revenue: 0,
@@ -81,6 +81,7 @@ function CreateSKUForm(props) {
           ref={costRef}
           min="1"
           max="9999"
+          step="1"
           required
         />
         <label htmlFor="sellprice" className={style.labels}>
@@ -94,6 +95,7 @@ function CreateSKUForm(props) {
           ref={sellRef}
           min="1"
           max="9999"
+          step="1"
           required
         />
         <div>
