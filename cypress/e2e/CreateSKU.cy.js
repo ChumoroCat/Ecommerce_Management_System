@@ -92,4 +92,31 @@ describe("Form Submits and Pop Up", () => {
       });
   });
 
+  it.only("'Create SKU' Button (Fail Submit)", () => {
+    cy.visit("http://localhost:3000/createsku");
+    cy.get("button").contains("Create SKU").click();
+
+    cy.get("select[name='category']").select("Bags");
+
+    cy.get("input[name='name']").type("H");
+
+    cy.get("input[name='costprice']")
+      .type("0.3")
+      .then(($input) => {
+        expect($input[0].validationMessage).to.eq(
+          "Value must be greater than or equal to 1."
+        );
+      });
+
+    cy.get("input[name='sellprice']")
+      .clear()
+      .type("19999")
+      .then(($input) => {
+        expect($input[0].validationMessage).to.eq(
+          "Value must be less than or equal to 9999."
+        );
+      });
+
+    cy.get("form[id='CreateSKUForm']").submit();
+  });
 });

@@ -36,7 +36,7 @@ function EditSKUForm(props) {
 
   return (
     <div>
-      <form className={style.form} onSubmit={completeEdit}>
+      <form id="EditSKUForm" className={style.form} onSubmit={completeEdit}>
         <label htmlFor="category" className={style.labels}>
           Category
         </label>
