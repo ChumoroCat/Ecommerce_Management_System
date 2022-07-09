@@ -13,7 +13,7 @@ function CreateSKUForm(props) {
     const results = {
       id: Date.now(),
       category: categoryRef.current.value,
-      name: nameRef.current.value,
+      name: nameRef.current.value.trim(),
       costprice: parseInt(costRef.current.value),
       sellprice: parseInt(sellRef.current.value),
       qty: 0,

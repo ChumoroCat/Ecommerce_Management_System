@@ -12,7 +12,7 @@ function EditSKUForm(props) {
 
     const results = {
       category: categoryRef.current.value,
-      name: nameRef.current.value,
+      name: nameRef.current.value.trim(),
       costprice: parseInt(costRef.current.value),
       sellprice: parseInt(sellRef.current.value),
     };
