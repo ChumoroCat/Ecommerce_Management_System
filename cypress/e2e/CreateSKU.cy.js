@@ -117,6 +117,8 @@ describe("Form Submits and Pop Up", () => {
         );
       });
 
+
+    cy.intercept('POST', 'https://react-ecommerce-cms-d3834-default-rtdb.asia-southeast1.firebasedatabase.app/sku.json').as('postSKUs');
     cy.get("form[id='CreateSKUForm']").submit();
   });
 

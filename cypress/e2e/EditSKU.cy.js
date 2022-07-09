@@ -1,5 +1,5 @@
 describe("Form Submits and Pop Up", () => {
-  it.only("'Create SKU' Button (Test Categories)", () => {
+  it.only("'Edit SKU' Button (Test Categories)", () => {
     cy.visit("http://localhost:3000/createsku");
     cy.wait(8000);
     cy.get("button").contains("Edit").click();
@@ -21,7 +21,7 @@ describe("Form Submits and Pop Up", () => {
       .should("have.value", "Wallets");
   });
 
-  it.only("'Create SKU' Button (Test Cost Price)", () => {
+  it.only("'Edit SKU' Button (Test Cost Price)", () => {
     cy.visit("http://localhost:3000/createsku");
     cy.wait(8000);
     cy.get("button").contains("Edit").click();
@@ -59,7 +59,7 @@ describe("Form Submits and Pop Up", () => {
       });
   });
 
-  it.only("'Create SKU' Button (Test Sell Price)", () => {
+  it.only("'Edit SKU' Button (Test Sell Price)", () => {
     cy.visit("http://localhost:3000/createsku");
     cy.wait(8000);
     cy.get("button").contains("Edit").click();
@@ -97,7 +97,7 @@ describe("Form Submits and Pop Up", () => {
       });
   });
 
-  it.only("'Create SKU' Button (Fail Submit)", () => {
+  it.only("'Edit SKU' Button (Fail Submit)", () => {
     cy.visit("http://localhost:3000/createsku");
     cy.wait(8000);
     cy.get("button").contains("Edit").click();
