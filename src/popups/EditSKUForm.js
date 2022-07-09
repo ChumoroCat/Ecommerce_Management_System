@@ -13,8 +13,8 @@ function EditSKUForm(props) {
     const results = {
       category: categoryRef.current.value,
       name: nameRef.current.value,
-      costprice: costRef.current.value,
-      sellprice: sellRef.current.value,
+      costprice: costRef.current.value.replace(/^0+|0+$/g, ""),
+      sellprice: sellRef.current.value.replace(/^0+|0+$/g, ""),
     };
 
     const response = await fetch(

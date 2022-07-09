@@ -14,8 +14,8 @@ function CreateSKUForm(props) {
       id: Date.now(),
       category: categoryRef.current.value,
       name: nameRef.current.value,
-      costprice: costRef.current.value,
-      sellprice: sellRef.current.value,
+      costprice: costRef.current.value.replace(/^0+|0+$/g, ""),
+      sellprice: sellRef.current.value.replace(/^0+|0+$/g, ""),
       qty: 0,
       expense: 0,
       revenue: 0,
@@ -41,7 +41,7 @@ function CreateSKUForm(props) {
 
   return (
     <div>
-      <form className={style.form} onSubmit={completeSubmit}>
+      <form id="CreateSKUForm" className={style.form} onSubmit={completeSubmit}>
         <label htmlFor="category" className={style.labels}>
           Category
         </label>
