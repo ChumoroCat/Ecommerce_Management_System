@@ -8,19 +8,19 @@ export default function MainNavigation(props) {
       <ul className={style.ul}>
         <NavLink
           className={(navData) => (navData.isActive ? style.active : "")}
-          to="createsku"
+          to="/ems/createsku"
         >
           Create SKU / Quick Purchase
         </NavLink>
         <NavLink
           className={(navData) => (navData.isActive ? style.active : "")}
-          to="dashboard"
+          to="/ems/dashboard"
         >
           Finances / Inventory
         </NavLink>
         <NavLink
           className={(navData) => (navData.isActive ? style.active : "")}
-          to="products"
+          to="/ems/products"
         >
           Published Products
         </NavLink>

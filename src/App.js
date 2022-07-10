@@ -16,15 +16,15 @@ function App() {
       <BodyLayout>
         <Routes>
           <Route
-            path="/"
+            path="/ems/"
             element={
               <Suspense fallback={<LoadSpinner />}>
-                <Navigate replace to="/createsku" />
+                <Navigate replace to="/ems/createsku" />
               </Suspense>
             }
           ></Route>
           <Route
-            path="/createsku"
+            path="/ems/createsku"
             element={
               <Suspense fallback={<LoadSpinner />}>
                 <CreateSKU />
@@ -32,7 +32,7 @@ function App() {
             }
           ></Route>
           <Route
-            path="/dashboard"
+            path="/ems/dashboard"
             element={
               <Suspense fallback={<LoadSpinner />}>
                 <Dashboard />
@@ -40,7 +40,7 @@ function App() {
             }
           ></Route>
           <Route
-            path="/products"
+            path="/ems/products"
             element={
               <Suspense fallback={<LoadSpinner />}>
                 <Products />
