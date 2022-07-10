@@ -125,7 +125,7 @@ describe("Form Submits and Pop Up", () => {
   it.only("Test Close Button", () => {
     cy.visit("http://localhost:3000/createsku");
     cy.wait(8000);
-    cy.get("button").contains("Edit").click();
+    cy.get("button").contains("Create SKU").click();
     cy.get("button").contains("Close").click();
   });
 });
